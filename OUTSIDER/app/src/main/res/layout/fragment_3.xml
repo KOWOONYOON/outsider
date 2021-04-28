@@ -11,17 +11,85 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imgs"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="219dp"
-            android:text="뉴스 화면"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:src="@drawable/tt"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_R"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginBottom="73dp"
+            android:src="@android:drawable/ic_media_play"
+            app:layout_constraintBottom_toBottomOf="@+id/imgs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_L"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_L"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="385dp"
+            android:layout_marginRight="385dp"
+            android:layout_marginBottom="68dp"
+            android:src="@android:drawable/ic_media_previous"
+            app:layout_constraintBottom_toBottomOf="@+id/imgs"
+            app:layout_constraintEnd_toStartOf="@+id/btn_R"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_2"
+            android:layout_width="145dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="192dp"
+            android:src="@drawable/cr2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_1"
+            app:layout_constraintTop_toTopOf="@+id/imgs" />
+
+        <ImageButton
+            android:id="@+id/btn_1"
+            android:layout_width="145dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="192dp"
+            android:src="@drawable/cr1"
+            app:layout_constraintEnd_toStartOf="@+id/btn_2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_4"
+            android:layout_width="145dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/cr4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_3"
+            app:layout_constraintTop_toBottomOf="@+id/btn_2" />
+
+        <ImageButton
+            android:id="@+id/btn_3"
+            android:layout_width="145dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/cr3"
+            app:layout_constraintEnd_toStartOf="@+id/btn_4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
